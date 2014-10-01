@@ -9,3 +9,5 @@ online at **[LearnPythonTheHardway.org/book/](http://www.learnpythonthehardway.o
 Exercises created by Zed A. Shaw.
 
 All modifications made by A.C. LoGreco.
+
+All exercises use Python 2 and were tested with Python 2.7.3
