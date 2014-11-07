@@ -4,21 +4,25 @@ Exercise 5 -- Learn Python the Hard Way -- Zed A. Shaw
 A.C. LoGreco
 """
 
-my_name = 'Anthony C. LoGreco'
-my_age = 32
-my_height = 66  # inches
-my_weight = 185  # lbs
-my_eyes = 'Brown'
-my_teeth = 'White'
-my_hair = 'Brown'
+name = 'Anthony C. LoGreco'
+age = 32
+height = 66.0  # inches
+weight = 185.0  # lbs
+eyes = 'Brown'
+teeth = 'White'
+hair = 'Brown'
 
-print "Let's talk about %s." % my_name
-print "He's %d inches tall." % my_height
-print "He's %d pounds heavy." % my_weight
+# Convert height and weight into SI units.
+height_si = height * 2.54  # convert inches into centimeters
+weight_si = weight * (1 / 2.2046226218) # convert pounds into kilograms
+
+print "Let's talk about %s." % name
+print "He's %d inches tall or %.2f centimeters tall." % (height, height_si)
+print "He's %d pounds heavy or %.2f kilograms heavy." % (weight, weight_si)
 print "Actually that's not too heavy. ;-)"
-print "He's got %s eyes and %s hair." % (my_eyes, my_hair)
-print "His teeth are usually %s depending on the coffee. ;-)" % my_teeth
+print "He's got %s eyes and %s hair." % (eyes, hair)
+print "His teeth are usually %s depending on the coffee. ;-)" % teeth
 
 print "If I add %d, %d, and %d I get %d." % (
-    my_age, my_height, my_weight, my_age + my_height + my_weight)
+    age, height, weight, age + height + weight)
 
