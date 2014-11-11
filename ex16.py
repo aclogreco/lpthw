@@ -36,12 +36,6 @@ print "I'm going to write these lines to the file."
 # write the content lines to the file
 content = "%s\n%s\n%s\n" % (line1, line2, line3)
 target.write(content)
-#target.write(line1)
-#target.write("\n")
-#target.write(line2)
-#target.write("\n")
-#target.write(line3)
-#target.write("\n")
 
 # close the file
 print "And finally, we close it."
