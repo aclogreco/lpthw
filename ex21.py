@@ -41,3 +41,9 @@ what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 
 print "That becomes: ", what, "Can you do it by hand?"
 
+also  = age + (height - (weight * (iq / 2)))
+
+print "Another way to calculate the puzzle: ",
+print "32 + (66 - (190 * (50 / 2))) = %d" % also
+
+
