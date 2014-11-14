@@ -4,10 +4,12 @@ Exercise 24 -- Learn Python the Hard Way -- Zed A. Shaw
 A.C. LoGreco
 """
 
+# print out some lines containing escape sequences
 print "Let's practice everything."
 print 'You\'d need to know \'bout escapes with \\',
 print 'that do \n newlines and \t tabs.'
 
+# define a multiline string
 poem = """
 \tThe lovely world
 with logic so firmly planted
@@ -17,14 +19,17 @@ and requires an explanation
 \n\t\twhere there is none.
 """
 
-print "--------------"
+# print the poem
+print "\n--------------"
 print poem
-print "--------------"
+print "--------------\n"
 
 
+# do some maths and print the result
 five = 10 - 2 + 3 - 6
 print "This should be five: %s" % five
 
+# define a function that does some jelly bean maths
 def secret_formula(started):
     jelly_beans = started * 500
     jars = jelly_beans / 1000
@@ -32,14 +37,19 @@ def secret_formula(started):
     return jelly_beans, jars, crates
 
 
+# call the function with an argument of 10,000
 start_point = 10000
 beans, jars, crates = secret_formula(start_point)
 
+# print the results of the function call
 print "With a starting point of: %d" % start_point
 print "We'd have %d beans, %d jars, and %d crates." % (beans, jars, crates)
 
+# change the starting value to 1,000
 start_point = start_point / 10
 
+# print the results
 print "We can also do that this way:"
-print "We'd have %d beans, %d jars, and %d crates." % secret_formula(start_point)
+print "We'd have %d beans, %d jars, and %d crates." % (
+    secret_formula(start_point))
 
