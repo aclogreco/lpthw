@@ -37,9 +37,9 @@ print " %s\t| %s\t| %s" % (a, b, a or b)
 # AND
 a = False
 b = False
-print "\nAND:\n-------------------------"
+print "\nAND:\n--------------------------"
 print " a\t| b\t| a AND b"
-print "--------|-------|--------"
+print "--------|-------|---------"
 print " %s\t| %s\t| %s" % (a, b, a and b)
 b = True
 print " %s\t| %s\t| %s" % (a, b, a and b)
@@ -49,4 +49,20 @@ print " %s\t| %s\t| %s" % (a, b, a and b)
 a = True
 b = True
 print " %s\t| %s\t| %s" % (a, b, a and b)
+
+# NOT OR
+a = False
+b = False
+print "\nNOT OR:\n------------------------------"
+print " a\t| b\t| a NOT(OR) b"
+print "--------|-------|-------------"
+print " %s\t| %s\t| %s" % (a, b, not (a or b))
+b = True
+print " %s\t| %s\t| %s" % (a, b, not (a or b))
+a = True
+b = False
+print " %s\t| %s\t| %s" % (a, b, not (a or b))
+a = True
+b = True
+print " %s\t| %s\t| %s" % (a, b, not (a or b))
 
