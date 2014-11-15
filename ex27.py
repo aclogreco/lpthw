@@ -16,12 +16,12 @@ print " a\t| NOT(a)"
 print "--------|--------"
 print " %s\t| %s" % (a, not a)
 a = True
-print " %s\t| %s\n" % (a, not a)
+print " %s\t| %s" % (a, not a)
 
 # OR
 a = False
 b = False
-print "OR:\n-------------------------"
+print "\nOR:\n-------------------------"
 print " a\t| b\t| a OR b"
 print "--------|-------|--------"
 print " %s\t| %s\t| %s" % (a, b, a or b)
@@ -33,3 +33,20 @@ print " %s\t| %s\t| %s" % (a, b, a or b)
 a = True
 b = True
 print " %s\t| %s\t| %s" % (a, b, a or b)
+
+# AND
+a = False
+b = False
+print "\nAND:\n-------------------------"
+print " a\t| b\t| a AND b"
+print "--------|-------|--------"
+print " %s\t| %s\t| %s" % (a, b, a and b)
+b = True
+print " %s\t| %s\t| %s" % (a, b, a and b)
+a = True
+b = False
+print " %s\t| %s\t| %s" % (a, b, a and b)
+a = True
+b = True
+print " %s\t| %s\t| %s" % (a, b, a and b)
+
