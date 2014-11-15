@@ -10,11 +10,26 @@ A.C. LoGreco
 print "Truth tables:\n"
 
 # NOT
-a = True
+a = False
 print "NOT:\n-----------------"
 print " a\t| NOT(a)"
 print "--------|--------"
 print " %s\t| %s" % (a, not a)
-a = False
-print " %s\t| %s" % (a, not a)
+a = True
+print " %s\t| %s\n" % (a, not a)
 
+# OR
+a = False
+b = False
+print "OR:\n-------------------------"
+print " a\t| b\t| a OR b"
+print "--------|-------|--------"
+print " %s\t| %s\t| %s" % (a, b, a or b)
+b = True
+print " %s\t| %s\t| %s" % (a, b, a or b)
+a = True
+b = False
+print " %s\t| %s\t| %s" % (a, b, a or b)
+a = True
+b = True
+print " %s\t| %s\t| %s" % (a, b, a or b)
