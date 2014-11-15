@@ -82,3 +82,19 @@ a = True
 b = True
 print " %s\t| %s\t| %s" % (a, b, not (a and b))
 
+# XOR
+a = False
+b = False
+print "\nXOR:\n--------------------------"
+print " a\t| b\t| a XOR b"
+print "--------|-------|---------"
+print " %s\t| %s\t| %s" % (a, b, a ^ b)
+b = True
+print " %s\t| %s\t| %s" % (a, b, a ^ b)
+a = True
+b = False
+print " %s\t| %s\t| %s" % (a, b, a ^ b)
+a = True
+b = True
+print " %s\t| %s\t| %s" % (a, b, a ^ b)
+
