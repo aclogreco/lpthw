@@ -98,3 +98,19 @@ a = True
 b = True
 print " %s\t| %s\t| %s" % (a, b, a ^ b)
 
+# !=
+a = 0
+b = 0
+print "\n!= :\n-------------------------"
+print " a\t| b\t| a != b"
+print "--------|-------|--------"
+print " %d\t| %d\t| %s" % (a, b, a != b)
+b = 1
+print " %d\t| %d\t| %s" % (a, b, a != b)
+a = 1
+b = 0
+print " %d\t| %d\t| %s" % (a, b, a != b)
+a = 1
+b = 1
+print " %d\t| %d\t| %s" % (a, b, a != b)
+
