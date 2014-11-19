@@ -19,17 +19,17 @@ def makeNumList(count):
     return numList
 
 
-i = 0
-numbers = []
+numbers = makeNumList(10)
+print "The numbers: "
+for num in numbers:
+    print num
 
-while i < 6:
-    print "At the top i is %d" % i
-    numbers.append(i)
-    
-    i += 1
-    print "Numbers now: ", numbers
-    print "At the bottom i is %d" % i
+numbers = makeNumList(8)
+print "The numbers: "
+for num in numbers:
+    print num
 
+numbers = makeNumList(6)
 print "The numbers: "
 for num in numbers:
     print num
